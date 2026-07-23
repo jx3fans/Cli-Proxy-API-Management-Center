@@ -40,10 +40,26 @@ export function ProviderHeaderCard({
 
   return (
     <section className={cardClassName}>
-      <div className={styles.row}>
-        <div className={styles.titleArea}>
-          <h1 className={styles.title}>{title ?? t('providersPage.header.title')}</h1>
-        </div>
+      <div className={styles.titleArea}>
+        <h1 className={styles.title}>{title ?? t('providersPage.header.title')}</h1>
+      </div>
+      <div className={styles.statsRow}>
+        {showSummary ? (
+          <div className={styles.chips}>
+            <span className={`${styles.chip} ${styles.chipPrimary}`}>
+              {t('providersPage.header.activeResources', {
+                active: totalActive,
+                total: totalResources,
+              })}
+            </span>
+            <span className={styles.chip}>
+              {t('providersPage.header.providerFamilies', { count: providerFamilies })}
+            </span>
+            <span className={styles.chip}>
+              {t('providersPage.header.updatedAt', { time: updatedAtLabel })}
+            </span>
+          </div>
+        ) : null}
         <div className={styles.actions}>
           <button
             type="button"
@@ -74,23 +90,6 @@ export function ProviderHeaderCard({
           ) : null}
         </div>
       </div>
-
-      {showSummary ? (
-        <div className={styles.chips}>
-          <span className={`${styles.chip} ${styles.chipPrimary}`}>
-            {t('providersPage.header.activeResources', {
-              active: totalActive,
-              total: totalResources,
-            })}
-          </span>
-          <span className={styles.chip}>
-            {t('providersPage.header.providerFamilies', { count: providerFamilies })}
-          </span>
-          <span className={styles.chip}>
-            {t('providersPage.header.updatedAt', { time: updatedAtLabel })}
-          </span>
-        </div>
-      ) : null}
     </section>
   );
 }

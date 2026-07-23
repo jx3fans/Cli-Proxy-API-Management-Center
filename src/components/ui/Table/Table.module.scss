@@ -28,7 +28,7 @@
     font-weight: 500;
     font-size: 12px;
     text-align: left;
-    padding: 10px 14px;
+    padding: 6px 8px;
     border-bottom: 1px solid var(--border-color);
     vertical-align: middle;
   }
@@ -46,10 +46,10 @@
   transition: background-color $transition-fast;
 
   td {
-    padding: 12px 14px;
+    padding: 6px 8px;
     border-bottom: 1px solid var(--border-color);
     vertical-align: top;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   &:hover td {

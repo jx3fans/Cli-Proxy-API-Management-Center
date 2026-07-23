@@ -23,6 +23,8 @@ import {
   xaiToResource,
 } from './adapters';
 import { PROVIDER_BRAND_ORDER } from './descriptors';
+
+const HIDDEN_BRANDS: ReadonlySet<ProviderBrand> = new Set<ProviderBrand>(['kimi']);
 import type {
   ProviderBrand,
   ProviderEntryFormInput,
@@ -416,7 +418,9 @@ export function useProviderWorkbench(): UseProviderWorkbenchResult {
 
   const snapshot = useMemo<ProviderSnapshot | null>(() => {
     if (!config) return null;
-    const groups: ProviderGroup[] = PROVIDER_BRAND_ORDER.map((brand) => {
+    const groups: ProviderGroup[] = PROVIDER_BRAND_ORDER.filter(
+      (brand) => !HIDDEN_BRANDS.has(brand)
+    ).map((brand) => {
       let resources: ProviderResource[] = [];
       switch (brand) {
         case 'gemini':

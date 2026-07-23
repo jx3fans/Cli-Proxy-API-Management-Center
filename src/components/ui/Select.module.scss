@@ -16,8 +16,8 @@
   justify-content: space-between;
   gap: 8px;
   width: 100%;
-  height: 40px;
-  padding: 0 12px;
+  height: 34px;
+  padding: 0 10px;
   border: 1px solid var(--border-color);
   border-radius: $radius-md;
   background-color: var(--bg-primary);
@@ -50,8 +50,8 @@
 }
 
 .triggerSm {
-  height: 28px;
-  padding: 0 10px;
+  height: 26px;
+  padding: 0 8px;
   font-size: 12px;
   box-shadow: none;
 }
@@ -94,7 +94,7 @@
 }
 
 .option {
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: $radius-md;
   border: 1px solid transparent;
   background: transparent;

@@ -19,11 +19,13 @@
   justify-content: space-between;
   gap: $spacing-md;
   margin: 0 0 $spacing-lg 0;
+  padding-right: 160px;
 
   @include mobile {
     align-items: flex-start;
     flex-direction: column;
     gap: $spacing-xs;
+    padding-right: 0;
   }
 }
 

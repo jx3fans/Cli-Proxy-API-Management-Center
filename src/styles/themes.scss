@@ -55,7 +55,7 @@
   --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.08);
   --shadow-lg: 0 10px 18px -3px rgb(0 0 0 / 0.1);
 
-  --radius-md: 8px;
+  --radius-md: 6px;
 
   // Workbench tokens (Home parity)
   --primary-8: color-mix(in srgb, var(--primary-color) 8%, transparent);
@@ -133,7 +133,7 @@
   --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.08);
   --shadow-lg: 0 10px 18px -3px rgb(0 0 0 / 0.1);
 
-  --radius-md: 8px;
+  --radius-md: 6px;
 
   // Workbench tokens (Home parity)
   --primary-8: color-mix(in srgb, var(--primary-color) 8%, transparent);
@@ -204,7 +204,7 @@
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3);
 
-  --radius-md: 8px;
+  --radius-md: 6px;
 
   // Workbench tokens (Home parity, deeper amber for dark)
   --primary-8: color-mix(in srgb, var(--primary-color) 8%, transparent);

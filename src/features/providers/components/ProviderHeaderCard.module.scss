@@ -10,13 +10,20 @@
 .row {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 
   @media (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 16px;
   }
+}
+
+.statsRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .titleArea {
@@ -24,11 +31,23 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  @media (min-width: 1024px) {
+    flex-shrink: 0;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-right: auto;
 }
 
 .title {
   margin: 0;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-primary);
@@ -63,9 +82,10 @@
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+  flex-shrink: 0;
 
-  @media (min-width: 1024px) {
-    justify-content: flex-end;
+  @media (max-width: 1023px) {
+    flex-basis: 100%;
   }
 }
 
@@ -73,8 +93,8 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 34px;
-  padding: 0 14px;
+  height: 32px;
+  padding: 0 10px;
   border-radius: var(--radius-md);
   font-size: 14px;
   font-weight: 500;
@@ -121,17 +141,11 @@
   }
 }
 
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
 .chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 12px;
+  padding: 4px 9px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   background: var(--muted-bg);

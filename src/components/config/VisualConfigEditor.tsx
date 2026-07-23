@@ -727,8 +727,6 @@ export function VisualConfigEditor({
               </span>
             ) : null}
           </div>
-        </div>
-
         <div className={styles.searchBox} ref={searchBoxRef}>
           <Input
             className={styles.searchControl}
@@ -835,6 +833,7 @@ export function VisualConfigEditor({
               )}
             </div>
           ) : null}
+        </div>
         </div>
       </div>
 

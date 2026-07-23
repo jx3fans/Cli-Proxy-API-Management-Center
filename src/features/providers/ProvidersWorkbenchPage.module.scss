@@ -4,20 +4,20 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   width: 100%;
-  padding: 24px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .layout {
   display: grid;
   align-items: start;
-  gap: 16px;
+  gap: 12px;
   grid-template-columns: minmax(0, 1fr);
 
   @media (min-width: 1280px) {
-    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-columns: 220px minmax(0, 1fr);
   }
 }
 

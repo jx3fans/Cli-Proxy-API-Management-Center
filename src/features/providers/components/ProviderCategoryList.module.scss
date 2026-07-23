@@ -4,7 +4,7 @@
 .stack {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   min-width: 0;
   align-self: start;
 }
@@ -12,14 +12,14 @@
 .aside {
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 6px;
   box-shadow: var(--shadow);
-  padding: 12px;
+  padding: 8px;
   min-width: 0;
 }
 
 .eyebrow {
-  margin: 4px 8px 8px;
+  margin: 3px 6px 6px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -37,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 10px 12px;
+  gap: 8px;
+  padding: 7px 8px;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
   background: transparent;
@@ -72,7 +72,7 @@
 .itemLeft {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   min-width: 0;
   flex: 1;
 }
@@ -152,7 +152,7 @@
   align-items: center;
   justify-content: center;
   min-width: 26px;
-  padding: 2px 9px;
+  padding: 2px 7px;
   border-radius: var(--radius-md);
   font-size: 12px;
   font-weight: 500;

@@ -42,7 +42,7 @@ interface ProviderResourceTableProps {
   onToggleDisabled?: (resource: ProviderResource, disabled: boolean) => void;
 }
 
-const columnWidths = ['180px', '220px', '72px', '138px', '174px', '176px'];
+const columnWidths = ['96px', undefined, '48px', '124px', '160px', '140px'] as const;
 
 const isSponsorResource = (resource: ProviderResource): boolean =>
   isMultiProtocolSponsorBrand(resource.brand);
